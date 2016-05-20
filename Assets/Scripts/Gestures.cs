@@ -61,7 +61,6 @@ public class Gestures : MonoBehaviour {
 				} else if (gestures [i].Type == Gesture.GestureType.TYPESWIPE) {
 					SwipeGesture gesture = new SwipeGesture (gestures [i]);
 					Vector swipeDirection = gesture.Direction;
-					print (swipeDirection);
 					if (swipeDirection.x > 0) {
 						myCamera.Rotate (new Vector3 (0, 2, 0));
 					} else if (swipeDirection.x <= 0) {
