@@ -18,14 +18,11 @@ public class MenuScript : MonoBehaviour {
 		
 	}
 	public void exitPress() {
-		Debug.Log("EXIT ");
 		Application.Quit ();
 	}
 
 	public void startGame() {
-		Debug.Log ("STARTT");
-		Application.LoadLevel ("PinchingSandbox");
-
+		Application.LoadLevel ("Game");
 	}
 
 }
